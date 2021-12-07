@@ -8,7 +8,11 @@
 
 ## Как правильно установить этот плагин?
 
-Скачать и установить плагин [Github Plugin Search](https://github.com/seojacky/github-must-have/raw/main/plugins/github-plugin-search.zip).
+1. Скачать  плагин [Github Plugin Search](https://github.com/seojacky/github-must-have/raw/main/plugins/github-plugin-search.zip).
+2. В админпанели перейти Плагины > Добавить новый > Загрузить плагин
+3. Через кнопку "Выберите файл" загрузить архив скачанный в пункте 1.
+4. Активировать плагин
+5. Отобразится множество плагинов доступных для установки с Github
 
 
 
