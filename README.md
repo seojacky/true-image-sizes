@@ -6,6 +6,10 @@
 
 Плагин True Image & True Sizes может использоваться и отдельно, вот только пользы от этого не будет, потому что только <a href="https://wp-booster.com/true-image-lazyload/" target="_blank">True Image &amp; Lazy Load</a> добавляет к изображениям микроразметку, которая и соотвествует требованиям Google (описано ниже). Данный плагин лишь создаёт условия для того, чтобы в микроразметке отображались нужные размеры.
 
+## Как правильно установить этот плагин?
+
+Скачать и установить плагин [Github Plugin Search](https://github.com/seojacky/github-must-have/raw/main/plugins/github-plugin-search.zip).
+
 
 
 ## Что делает True Image & True Sizes?
