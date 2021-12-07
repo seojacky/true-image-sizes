@@ -62,6 +62,8 @@ function options_page_tits_output(){
 </style>
 	<div class="setting">
 		<h1><?php echo get_admin_page_title() ?></h1>
+		<h2><a href="https://github.com/seojacky/true-image-sizes" target="_blank">FAQ по плагину</a>			
+		</h2>
 		
 		
 				<form action="options.php" method="POST">
@@ -74,3 +76,84 @@ function options_page_tits_output(){
 	<?php
 }
 
+/**
+ * Регистрируем настройки.
+ * Настройки будут храниться в массиве, а не одна настройка = одна опция.
+ */
+add_action('admin_init', 'tits_plugin_settings');
+function tits_plugin_settings(){
+	// параметры: $option_group, $ytsp_option, $sanitize_callback
+	register_setting( 'tits_option_group', 'tits_option', 'tits_sanitize_callback' );
+
+	// параметры: $id, $title, $callback, $page
+	add_settings_section( 'section_id', 'Основные настройки', '', 'tits_page' ); 
+
+	// параметры: $id, $title, $callback, $page, $section, $args
+	add_settings_field('tits_field_checkbox_1x1', 'Добавить размер 1:1', 'fill_tits_field_checkbox_1x1', 'tits_page', 'section_id' );
+	
+	// параметры: $id, $title, $callback, $page, $section, $args
+	add_settings_field('tits_field_checkbox_4x3', 'Добавить размер 4:3', 'fill_tits_field_checkbox_4x3', 'tits_page', 'section_id' );
+	
+		// параметры: $id, $title, $callback, $page, $section, $args
+	add_settings_field('tits_field_checkbox_16x9', 'Добавить размер 16:9', 'fill_tits_field_checkbox_16x9', 'tits_page', 'section_id' );
+
+
+}
+/*data-tt="<?php echo $val['checkbox_1x1']; ?>" */
+## Заполняем опции
+function fill_tits_field_checkbox_1x1(){
+	$val = get_option('tits_option');	
+	$val = isset($val['checkbox_1x1']) ? $val['checkbox_1x1'] : null;
+	?>
+	<p><label><input type="checkbox" name="tits_option[checkbox_1x1]" value="1" <?php checked( 1, $val ); ?> /></label>
+	</p>
+	<?php
+}
+
+function fill_tits_field_checkbox_4x3(){
+	$val = get_option('tits_option');
+	$val = isset($val['checkbox_4x3']) ? $val['checkbox_4x3'] : null;
+	?>
+	<p><label><input type="checkbox" name="tits_option[checkbox_4x3]" value="1" <?php checked( 1, $val ); ?> /></label>
+	</p>
+	<?php
+}
+
+
+function fill_tits_field_checkbox_16x9(){
+	$val = get_option('tits_option');
+	$val = isset($val['checkbox_16x9']) ? $val['checkbox_16x9'] : null;
+	?>
+	<p><label><input type="checkbox" name="tits_option[checkbox_16x9]" value="1" <?php checked( 1, $val ); ?> /></label>
+	</p>
+	<?php
+}
+
+
+## Очистка данных
+/*function tits_sanitize_callback( $options ){ 
+	// очищаем
+	foreach( $options as $name => & $val ){
+
+		if( $name == 'checkbox_1x1' )
+			$val = intval( $val );
+
+	}
+
+	
+	return $options;
+}*/
+
+## default options
+function tits_plugin_default_values(){
+	$defaults = array(
+		'tits_option' => array(
+			'checkbox_1x1' => 0,
+		),		
+	);
+	
+	foreach ( $defaults as $section => $fields ) {
+		add_option( $section, $fields,'', false );
+	}
+}
+register_activation_hook( TITS_FILE, 'tits_plugin_default_values' );

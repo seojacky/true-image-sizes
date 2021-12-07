@@ -20,5 +20,5 @@ define('TITS_FILE', __FILE__); // Путь до главного (то есть 
 define('TITS_SLUG', 'true-image-sizes');
 define('TITS_DIR',  __DIR__);
 
-require_once DBSC_DIR . '/functions.php';
-require_once DBSC_DIR . '/setting-page.php';
+require_once TITS_DIR . '/functions.php';
+require_once TITS_DIR . '/setting-page.php';
