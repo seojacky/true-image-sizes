@@ -42,3 +42,35 @@ add_action('admin_head', function(){
 	);
 
 }, 99 );
+
+function options_page_tits_output(){
+
+	?>
+<style>
+	.setting, .setting .maintext {
+    padding: 5px;
+}
+	.maintext {
+    background: #eae99f;
+}
+	ul {
+    list-style: disc inside;
+	}
+	p {    
+    text-indent: 10px;
+	}
+</style>
+	<div class="setting">
+		<h1><?php echo get_admin_page_title() ?></h1>
+		
+		
+				<form action="options.php" method="POST">
+			<?php
+				settings_fields( 'tits_option_group' );     // скрытые защитные поля
+				do_settings_sections( 'tits_page' ); // секции с настройками (опциями). У нас она всего одна 'section_id'
+				submit_button();
+			?>	
+		</form>
+	<?php
+}
+
