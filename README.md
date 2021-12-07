@@ -1,5 +1,13 @@
 # Плагин True Image & True Sizes
 
+## Вступление
+
+Этот плагин является дополнением к плагину <a href="https://wp-booster.com/true-image-lazyload/" target="_blank">True Image &amp; Lazy Load</a>.
+
+True Image & True Sizes может использоваться и отдельно, вот только пользы от этого не будет, потому что только <a href="https://wp-booster.com/true-image-lazyload/" target="_blank">True Image &amp; Lazy Load</a> добавляет к изображениям микроразметку, которая и соотвествует требованиям Google (описано ниже).
+
+
+
 ## Что делает True Image & True Sizes?
 
 Плагин True Image & True Sizes добавляет к стандартным размерам изображений в WordPress дополнительные размеры в соотношениях сторон 1:1, 4:3, 16:9.
