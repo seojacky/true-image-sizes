@@ -20,6 +20,11 @@
 ![размеры изображения](https://i.imgur.com/pwYP8tf.png)
 
 
+## Почему важно добавлять дополнительные размеры в соотношениях сторон 1:1, 4:3, 16:9? 
+
+Потому что Google  в своей документации для микроразметки (Article)[https://developers.google.com/search/docs/advanced/structured-data/article] и (Product)[https://developers.google.com/search/docs/advanced/structured-data/product] прямо указывает на эти размеры:
+
+![размеры изображения в микроразметке Product](https://i.imgur.com/96mEQwc.jpg)
 
 ## Как использовать плагин?
 
