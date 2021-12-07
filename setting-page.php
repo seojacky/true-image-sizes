@@ -107,6 +107,7 @@ function fill_tits_field_checkbox_1x1(){
 	?>
 	<p><label><input type="checkbox" name="tits_option[checkbox_1x1]" value="1" <?php checked( 1, $val ); ?> /></label>
 	</p>
+		<p>Размеры: 640x640, 920x920, 1280x1280</p>
 	<?php
 }
 
@@ -114,8 +115,8 @@ function fill_tits_field_checkbox_4x3(){
 	$val = get_option('tits_option');
 	$val = isset($val['checkbox_4x3']) ? $val['checkbox_4x3'] : null;
 	?>
-	<p><label><input type="checkbox" name="tits_option[checkbox_4x3]" value="1" <?php checked( 1, $val ); ?> /></label>
-	</p>
+	<p><label><input type="checkbox" name="tits_option[checkbox_4x3]" value="1" <?php checked( 1, $val ); ?> /></label></p>
+		<p>Размеры: 640x480, 920x690, 1280x960</p>
 	<?php
 }
 
@@ -124,31 +125,41 @@ function fill_tits_field_checkbox_16x9(){
 	$val = get_option('tits_option');
 	$val = isset($val['checkbox_16x9']) ? $val['checkbox_16x9'] : null;
 	?>
-	<p><label><input type="checkbox" name="tits_option[checkbox_16x9]" value="1" <?php checked( 1, $val ); ?> /></label>
-	</p>
+	<p><label><input type="checkbox" name="tits_option[checkbox_16x9]" value="1" <?php checked( 1, $val ); ?> /></label></p>
+		<p>Размеры: 640x360, 920x518, 1280x720</p>
 	<?php
 }
 
 
 ## Очистка данных
-/*function tits_sanitize_callback( $options ){ 
+function tits_sanitize_callback( $options ){
+	
+	if(!isset($options)) return ;
 	// очищаем
 	foreach( $options as $name => & $val ){
 
 		if( $name == 'checkbox_1x1' )
 			$val = intval( $val );
+		
+		if( $name == 'checkbox_4x3' )
+			$val = intval( $val );
+		
+		if( $name == 'checkbox_16x9' )
+			$val = intval( $val );		
 
 	}
 
 	
 	return $options;
-}*/
+}
 
 ## default options
 function tits_plugin_default_values(){
 	$defaults = array(
 		'tits_option' => array(
 			'checkbox_1x1' => 0,
+			'checkbox_4x3' => 0,
+			'checkbox_16x9' => 0,
 		),		
 	);
 	
