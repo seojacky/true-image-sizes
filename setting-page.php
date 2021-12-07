@@ -35,7 +35,7 @@ add_action('admin_head', function(){
 	$submenu = add_submenu_page(
 	'wp-booster',
 	'Настройки плагина True Image & True Sizes',
-	'True Image & True Sizes',
+	'<span class="dashicons dashicons-images-alt"></span>True Image & True Sizes',
 	'manage_options',
 	'tits_slug',
 	'options_page_tits_output'
