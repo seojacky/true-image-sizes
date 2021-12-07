@@ -13,6 +13,8 @@
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/F6KGcb6trXc/maxresdefault.jpg)](https://www.youtube.com/watch?v=F6KGcb6trXc)
 
+**Подробно объясняется зачем нужны дополнительные размеры на отметке времени 43:30.**
+
 ![размеры изображения](https://i.imgur.com/pwYP8tf.png)
 
 
