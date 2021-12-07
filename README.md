@@ -9,7 +9,7 @@
 
 ## Для чего нужен плагин? 
 
-Плагин добавляет дополнительные размеры о которых долго и пространно рассказывает Demi Murych (в этом видео)[https://www.youtube.com/watch?v=F6KGcb6trXc]
+Плагин добавляет дополнительные размеры о которых долго и пространно рассказывает Demi Murych [в этом видео](https://www.youtube.com/watch?v=F6KGcb6trXc)
 
 **Подробно объясняется зачем нужны дополнительные размеры на отметке времени 43:30.**
 
@@ -22,7 +22,7 @@
 
 ## Почему важно добавлять дополнительные размеры в соотношениях сторон 1:1, 4:3, 16:9? 
 
-Потому что Google  в своей документации для микроразметки (Article)[https://developers.google.com/search/docs/advanced/structured-data/article] и (Product)[https://developers.google.com/search/docs/advanced/structured-data/product] прямо указывает на эти размеры:
+Потому что Google  в своей документации для микроразметки [Article](https://developers.google.com/search/docs/advanced/structured-data/article) и [Product](https://developers.google.com/search/docs/advanced/structured-data/product) прямо указывает на эти размеры:
 
 ![размеры изображения в микроразметке Product](https://i.imgur.com/96mEQwc.jpg)
 
