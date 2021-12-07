@@ -4,7 +4,7 @@
 
 Этот плагин является дополнением к плагину <a href="https://wp-booster.com/true-image-lazyload/" target="_blank">True Image &amp; Lazy Load</a>.
 
-True Image & True Sizes может использоваться и отдельно, вот только пользы от этого не будет, потому что только <a href="https://wp-booster.com/true-image-lazyload/" target="_blank">True Image &amp; Lazy Load</a> добавляет к изображениям микроразметку, которая и соотвествует требованиям Google (описано ниже).
+Плагин True Image & True Sizes может использоваться и отдельно, вот только пользы от этого не будет, потому что только <a href="https://wp-booster.com/true-image-lazyload/" target="_blank">True Image &amp; Lazy Load</a> добавляет к изображениям микроразметку, которая и соотвествует требованиям Google (описано ниже). Данный плагин лишь создаёт условия для того, чтобы в микроразметке отображались нужные размеры.
 
 
 
