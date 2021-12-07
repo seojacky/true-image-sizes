@@ -1,4 +1,18 @@
 <?php
+/*
+ * Plugin name: True Image & True Sizes
+ * Description: Плагин для генерации набора изображений в соотношениях сторон 1:1, 4:3, 16:9.
+ * Version: 0.1
+ * Author: @big_jacky 
+ * Author URI: https://t.me/big_jacky
+ * Plugin URI: https://github.com/seojacky/true-image-sizes
+ * GitHub Plugin URI: https://github.com/seojacky/true-image-sizes
+ * Domain Path: /languages
+*/
+/* Exit if accessed directly */
+if ( ! defined( 'ABSPATH' ) ) {	return;}
+
+
 // Тоже самое можно сделать в плагине Simple Image Sizes
 // рекомендую его к установке, так как тогда можно на каждом отдельном изображении перегенерировать размеры
 // пример https://i.imgur.com/UcJt9DU.jpg
@@ -12,8 +26,7 @@ add_image_size( '1x1_640x640', '640', '640', true );
 add_image_size( '1x1_920x920', '920', '920', true );
 add_image_size( '1x1_1280x1280', '1280', '1280', true );
 
-add_filter( 'image_size_names_choose', 'my_custom_sizes_demi_murych' );
-function my_custom_sizes_demi_murych( $sizes ) {
+add_filter( 'image_size_names_choose', function ( $sizes ) {
 	return array_merge( $sizes, array(
 		'4x3_640x480' => 'Размер 4x3_640x480',
 		'4x3_920x690' => 'Размер 4x3_920x690',
@@ -25,4 +38,4 @@ function my_custom_sizes_demi_murych( $sizes ) {
 		'1x1_920x920' => 'Размер 1x1_920x920',
 		'1x1_1280x1280' => 'Размер 1x1_1280x1280',
 	) );
-}
+});
