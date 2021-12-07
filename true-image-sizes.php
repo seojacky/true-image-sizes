@@ -2,7 +2,7 @@
 /*
  * Plugin name: True Image & True Sizes
  * Description: Плагин для генерации набора изображений в соотношениях сторон 1:1, 4:3, 16:9.
- * Version: 0.1
+ * Version: 0.2
  * Author: @big_jacky 
  * Author URI: https://t.me/big_jacky
  * Plugin URI: https://github.com/seojacky/true-image-sizes
