@@ -21,3 +21,4 @@ define('TITS_SLUG', 'true-image-sizes');
 define('TITS_DIR',  __DIR__);
 
 require_once DBSC_DIR . '/functions.php';
+require_once DBSC_DIR . '/setting-page.php';
