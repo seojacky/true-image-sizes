@@ -1,7 +1,7 @@
 <?php
 /*
  * Plugin name: True Image & True Sizes
- * Description: Плагин для генерации набора изображений в соотношениях сторон 1х1, 4х3, 16х9.
+ * Description: Плагин для генерации набора изображений в соотношениях сторон 1:1, 4:3, 16:9.
  * Version: 0.1
  * Author: @big_jacky 
  * Author URI: https://t.me/big_jacky
