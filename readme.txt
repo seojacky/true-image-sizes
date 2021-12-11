@@ -1,7 +1,6 @@
 ===  True Image & True Sizes ===
 Contributors: seojacky
-Tags: seo-friendly, seo
-, image, optimaze images
+Tags: seo-friendly, seo, image, optimaze images
 Requires at least: 5.0
 Tested up to: 5.5
 Requires PHP: 5.6.20
